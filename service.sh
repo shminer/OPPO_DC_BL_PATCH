@@ -32,10 +32,10 @@ sleep 1
 stop displaypanelfeature-1-0 && start displaypanelfeature-1-0
 sleep 3
 
-echo "-- Lock kernel"
+#echo "-- Lock kernel"
 HBMPATH=/sys/kernel/oplus_display/dimlayer_hbm
 echo 1 > $HBMPATH
-chmod 0000 $HBMPATH
+# chmod 0000 $HBMPATH
 
 echo "-- Restore SElinux mode"
 setenforce $SEEN

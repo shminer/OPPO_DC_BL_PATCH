@@ -1,6 +1,6 @@
 id=DC_LIGHT_PATCH
 name=ONEPLUS9 PRO COS12 DC调光
-version=1.2
-versionCode=20220226
+version=1.4 beta 2
+versionCode=20220308
 author=JZshminer
-description=一加9 DC调光，HIDL pathch版
+description=一加9 DC调光HIDL pathch版，目前仍测试阶段，目前无法和护眼模式以及色温调节兼容，刷入模块后色彩覆盖模式失效。DC调光总比护眼护眼吧？

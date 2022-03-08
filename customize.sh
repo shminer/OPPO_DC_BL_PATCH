@@ -5,7 +5,9 @@ ui_print "- ONEPLUS 9 PRO DC backLight PATCH (HIDL VERSION)"
 ui_print "- ONEPLUS 9 PRO DC 调光补丁(HIDL版)"
 ui_print "- Not test on other ColorOS 12 version!!!"
 ui_print "- For safety, Only flash on ColorOS 12 C.46!!!"
-ui_print "- 未经其他COS12版本测试，请在非C.46版本上刷入!!!"
+ui_print "- 未经其他COS12版本测试，请勿在非C.46版本上刷入!!!"
+ui_print "- 目前仅兼容coloros 12 C.46系统刷入，"
+ui_print "- 暂时不限制机器，请做好备份以及准备好magisk核心模式"
 ui_print "--------------------------------------------------------"
 ui_print "- All Rights Reserved by JZshminer."
 ui_print "--------------------------------------------------------"
@@ -25,6 +27,7 @@ mkdir -p $MODPATH/bin
 unzip -j -o "${ZIPFILE}" "bin/vendor.oplus.hardware.displaypanelfeature@1.0-service" -d $MODPATH/bin >&2
 unzip -j -o "${ZIPFILE}" 'service.sh' -d $MODPATH >&2
 unzip -j -o "${ZIPFILE}" 'module.prop' -d $MODPATH >&2
+unzip -j -o "${ZIPFILE}" 'post-fs-data.sh' -d $MODPATH >&2
 
 set_perm_recursive $MODPATH 0 0 0755 0644
 set_perm  $MODPATH/bin/vendor.oplus.hardware.displaypanelfeature@1.0-service   0     2000    0755      u:object_r:oppo_hal_displaypanelfeature_exec:s0
